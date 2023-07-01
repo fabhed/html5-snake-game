@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snake Game</title>
+    <style>
+        #game-board {
+            position: relative;
+            height: 400px;
+            width: 400px;
+            border: 1px solid black;
+        }
+        .dot {
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-board"></div>
+    <script>
+        var dot = document.createElement('div');
+        dot.className = 'dot';
+        dot.style.left = '50px';
+        dot.style.top = '50px';
+        document.getElementById('game-board').appendChild(dot);
+    </script>
+</body>
+</html>
